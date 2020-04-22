@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Challenge</title>
-    <h1>Your challenge is to start at <?php echo $_SESSION['starttime']; ?> </h1>
+    <h1>Your challenge is to start at <?php echo $_SESSION['session_starttime']; ?> </h1>
     <input type="submit" value="Accept">
     <input type="submit" value="Decline">
     <link rel="stylesheet" href="css/style.css">
