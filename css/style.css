@@ -69,3 +69,20 @@ body{background-color: #379683;}
     background: #1A4668;
   }
 }
+
+.chart
+{
+  margin: 60px auto;
+  width: 800px;
+  height:500px;
+}
+
+h1{
+  text-align: center;
+  font-size: 3.5em;
+  font-weight: 100;
+  color: #edf5e1;
+  line-height: 1em;
+  margin: 0 0 0.5em 0;
+  padding: 0;
+}
