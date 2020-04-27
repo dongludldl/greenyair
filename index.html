@@ -1,48 +1,41 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="utf-8">
-  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="css/style.css">
   <title>GreenyAir</title>
+  <link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Yellowtail&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <section id= "banner">
+    <h1>GreenyAir</h1>
+    <p>Got one minute? You can help save the environment in VIC</p>
+  </section>
 </head>
 <body>
-
-  <!-- Banner -->
-  <section id="banner">
-    <h1>Welcome to GreenyAir</h1>
-    <p>A Project Aimed to Reduce Greenhouse Gas in VIC.</p>
-  </section>
-  <!-- One -->
-  <section class="search-sec">
-    <div class="container">
-      <form action="timeinput.php" method="post">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="row">
-              <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                <select class="form-control search-slt" id="exampleFormControlSelect1">
-                  <option>Select Category</option>
-                  <option>Electric appliances</option>
-                  <option>Vehicle</option>
-                  </select>
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                  <input type="text" name="starttime" class="form-control search-slt" placeholder="Enter Starting Time e.g. 17:00">
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                  <input type="text" name="endtime" class="form-control search-slt" placeholder="Enter Stoping Time e.g. 19:00">
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                <button type="button" class="btn btn-danger wrn-btn" onclick=location.href="challenge.php">Get Challenge</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </form>
+  <div class="quiz-container">
+    <div id="question" class="question"></div>
+    <label class="option">
+      <input type="radio" name="option" value="1" />
+      <span class="option1"></span>
+    </label>
+    <label class="option">
+      <input type="radio" name="option" value="2" />
+      <span class="option2"></span>
+    </label>
+    <label class="option">
+      <input type="radio" name="option" value="3" />
+      <span class="option3"></span>
+    </label>
+      <!-- Buttons -->
+    <div class="controls">
+      <button class="previous">Previous</button>
+      <button class="next">Next</button>
     </div>
-  </section>
+  </div>
+  <div class="result">
+    <script src="script.js"></script>
+  </div>
+  <footer id="footer">All rights reserved. Powered by Its Code Outside</footer>
 </body>
 </html>
